@@ -6,7 +6,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     const router = nuxtApp.$router
 
     router.beforeEach(async (to, from, next) => {
+        console.log(to.name);
         if (to.meta && to.meta.auth) {
+            console.log("#### 1");
             next('/login');
             return;
         }

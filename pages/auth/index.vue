@@ -8,4 +8,5 @@
 definePageMeta({
     auth: true
 })
+console.log("#### 2");
 </script>
